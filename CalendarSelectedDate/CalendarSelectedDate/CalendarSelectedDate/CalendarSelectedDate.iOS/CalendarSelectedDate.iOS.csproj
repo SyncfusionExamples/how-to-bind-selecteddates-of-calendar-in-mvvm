@@ -134,7 +134,4 @@
       <Name>CalendarSelectedDate</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\stethoscope_schedule.png" />
-  </ItemGroup>
 </Project>
