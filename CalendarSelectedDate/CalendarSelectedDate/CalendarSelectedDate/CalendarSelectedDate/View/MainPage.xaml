@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CalendarAppointment"
+             xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+             x:Class="CalendarAppointment.MainPage">
+    <ContentPage.Content>
+        <calendar:SfCalendar x:Name="calendar" ShowInlineEvents="True" SelectionMode="MultiSelection" DataSource="{Binding Appointments}" SelectedDates="{Binding SelectedDates, Mode=TwoWay}">
+            <calendar:SfCalendar.BindingContext>
+                <local:CalendarViewModel/>
+            </calendar:SfCalendar.BindingContext>
+        </calendar:SfCalendar>
+    </ContentPage.Content>
+</ContentPage>
